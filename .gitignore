@@ -1,0 +1,33 @@
+# --- Python ---
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Distribution / Packaging
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# Virtual Environments
+.venv/
+venv/
+env/
+ENV/
+
+# Unit Test / Coverage
+.pytest_cache/
+.coverage
+htmlcov/
+
+# --- PyCharm ---
+.idea/
+*.iml
+
+# --- Windows ---
+Thumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# --- Sonstiges ---
+*.log
