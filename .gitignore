@@ -24,6 +24,7 @@ htmlcov/
 .idea/
 *.iml
 jsondatei.json
+learnote.json
 
 # --- Windows ---
 Thumbs.db
