@@ -23,6 +23,7 @@ htmlcov/
 # --- PyCharm ---
 .idea/
 *.iml
+jsondatei.json
 
 # --- Windows ---
 Thumbs.db
