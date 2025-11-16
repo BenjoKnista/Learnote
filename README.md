@@ -3,7 +3,7 @@
 Ein kleines CLI‑Programm zum Verwalten von Lernnotizen.  
 Alle Daten werden als JSON‑Liste in einer Datei namens `learnote.json` gespeichert.
 
-![Demo GIF](./Assets/Learnote coding V0.1 1.gif)
+![Demo GIF](Assets/coding.gif)
 
 ---
 
