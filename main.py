@@ -1,5 +1,6 @@
 import json
 import os
+import textwrap
 
 jsondatei = "learnote.json"
 
@@ -55,7 +56,8 @@ def anzeigen():
         print("+++GESPEICHERTE THEMEN")
         nummerierung = 1
         for thema in zu_lernen:
-            print(f"{nummerierung}. {thema['titel']} - {thema['beschreibung']}")
+            print(f"{nummerierung}. {thema['titel']}")
+            print(textwrap.fill(f"{thema['beschreibung']}", width=60))
             nummerierung += 1
 
 
