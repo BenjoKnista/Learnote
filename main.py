@@ -61,13 +61,29 @@ def anzeigen():
             nummerierung += 1
 
 
+def bearbeiten():
+    global zu_lernen
+
+    anzeigen()
+
+    user_input = int(input("Welchen Eintrag möchtest du bearbeiten? ")) -1
+
+    zu_lernen[user_input]["titel"] = input("Neuer Titel: ")
+    zu_lernen[user_input]["beschreibung"] = input("Neuer Beschreibung: ")
+
+    speichern()
+
+    print("\nEintrag wurde aktualisiert.")
+
+
 laden()
 
 while True:
     print("1. Thema hinzufügen")
     print("2. Themen anzeigen")
     print("3. Thema löschen")
-    print("4. Beenden")
+    print("4. Themen bearbeiten")
+    print("5. Beenden")
 
     auswahl = input("Deine Wahl: ")
 
@@ -79,6 +95,8 @@ while True:
     elif auswahl == "3":
         loeschen()
     elif auswahl == "4":
+        bearbeiten()
+    elif auswahl == "5":
         print("Alles klar! Bis zum nächsten mal!")
         break
     else:
